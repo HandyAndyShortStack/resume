@@ -1,0 +1,16 @@
+{
+  "name": "resume",
+  "version": "2.0.0",
+  "description": "my resume",
+  "main": "server.js",
+  "dependencies": {
+    "jade": "latest",
+    "stylus": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HandyAndyShortStack/resume.git"
+  },
+  "author": "Andy Short",
+  "homepage": "http://andyshort.us"
+}
