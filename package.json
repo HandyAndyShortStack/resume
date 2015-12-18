@@ -1,0 +1,26 @@
+{
+  "name": "resume",
+  "version": "2.0.0",
+  "description": "my resume",
+  "main": "server.js",
+  "dependencies": {
+    "jade": "latest",
+    "stylus": "latest",
+    "parallelshell": "latest",
+    "node-static": "latest",
+    "cowsay": "latest"
+  },
+  "scripts": {
+    "watch:jade": "jade --watch jade/ --out build/",
+    "watch:stylus": "stylus --watch stylus/ --out build/styles",
+    "watch": "parallelshell 'npm run watch:jade' 'npm run watch:stylus'",
+    "server": "node server.js",
+    "dev": "parallelshell 'npm run watch' 'npm run server'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HandyAndyShortStack/resume.git"
+  },
+  "author": "Andy Short",
+  "homepage": "http://andyshort.us"
+}
